@@ -1,0 +1,89 @@
+body {
+    background-color: #26609e;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #134074;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btninicio {
+    text-align: right;
+    margin-top: -3%;
+    margin-right: 5%;
+}
+
+.btninicio a.btn {
+    display: inline-block;
+    background-color: rgb(26, 151, 176);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btninicio a.btn:hover {
+    background-color: rgb(26, 151, 176);
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.tracking-info,
+.tracking-results {
+    background-color: #134074;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.tracking-info input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #134074;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    height: 50px;
+    margin-top: 5.3%;
+}
+
+.video-section iframe {
+    width: 60%;
+    margin-right: 15%;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.img1{
+    margin-top: -17%;
+    margin-left: 5%;
+}
+
+.img2{
+margin-top: -15%;
+margin-left: 80%;
+}

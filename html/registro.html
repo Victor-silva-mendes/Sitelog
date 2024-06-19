@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Transportadora Aérea</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-qEol3JImZPRwFhpqcdDEftl8IYUjsLp2J6jPCn7rq2X2E7xjA9As8h5FpW3gU6Hg" crossorigin="anonymous">
+</head>
+<body>
+    <div class="fundo">
+        <header>
+            <div class="tit">
+                <h1>Faça seu Registro Aqui</h1>
+            </div>
+        </header>
+
+        <div class="btninicio">
+            <a href="index.html" class="btn">Início</a>
+        </div>
+
+        <div class="registro-form">
+            <h2>Registre-se</h2>
+            
+            <form action="registrar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            
+                <!-- Adicione o atributo placeholder nos campos de e-mail -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Digite seu email no formato email@example.com" required>
+
+<!-- Restante do código -->
+
+            
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            <p></p>
+            <p></p>
+                <button type="submit" class="btn-registrar">Registrar</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Transportadora Aérea. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

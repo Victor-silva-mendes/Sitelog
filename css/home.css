@@ -1,0 +1,294 @@
+/* Estilo do cabeçalho */
+header {
+    background-color: rgb(17, 74, 148);
+    color: rgb(255, 255, 255);
+    padding: 20px 0; /* Reduz a altura do cabeçalho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    margin-left: 80px; /* Ajuste o valor conforme necessário */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px; /* Ajuste o valor conforme necessário para o espaçamento desejado */
+}
+
+
+
+
+.logo {
+    margin-top: -15%;
+    margin-left: -2%;
+}
+
+.titulo {
+    margin-top: -10%;
+}
+
+.inf {
+    margin-left: 45%;
+    color: #0f2848;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -5%;
+}
+
+/* Estilo do rodapé */
+.rodape {
+    margin-top: 5%;
+    background-color: rgb(17, 74, 148); /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Alinhar o texto ao centro */
+    padding: 20px 0; /* Espaçamento interno para o rodapé */
+}
+
+
+
+/* Estilos adicionais para o rodapé, como font-size e outros, podem ser adicionados aqui */
+
+.aviao{
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seu estilo CSS personalizado aqui */
+
+/* Adição de animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.aviao img {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.texto-direita {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fundo animado */
+body {
+    background: linear-gradient(45deg, #1a60b0, #66c3d0);
+    animation: gradientAnimation 5s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+/* Melhoria no Menu */
+.menu-item {
+    transition: background-color 0.5s ease, transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    background-color: #6491cb;
+    transform: scale(1.1);
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Layout Aprimorado */
+.aviao {
+    margin: 5% auto;
+    text-align: center;
+}
+
+
+/* Estilo para a logo */
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Ajuste o valor conforme necessário */
+    margin-top:30%;
+    margin-left: 20%;
+}
+
+/* Centralizar o cabeçalho */
+header {
+    text-align: center;
+}
+
+
+
+/* Estilo da seção de recursos */
+.recursos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 5% 0;
+}
+
+.recurso {
+    width: 30%; /* Ajuste a largura conforme necessário */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(17, 74, 148);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.recurso h2 {
+    color: rgb(255, 255, 255);
+}
+
+.recurso p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilo dos botões do menu */
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo */
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s;
+}
+
+/* Efeito de mudança de cor ao passar o mouse sobre os botões do menu */
+.menu-item:hover {
+    background-color: #6491cb;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.menu-item:hover a {
+    color: #fff; /* Texto branco ao passar o mouse */
+}
+
+
+
+/* Estilo dos botões do menu */
+.menu-item {
+    background-color: rgba(56, 115, 233, 0.9);
+    padding: 10px 15px; /* Reduz o tamanho dos botões do menu */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de mudança de cor ao passar o mouse sobre os botões do menu */
+.menu-item:hover {
+    background-color: #6491cb;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout Aprimorado */
+.aviao {
+    margin: 2% auto; /* Ajusta a margem superior */
+    text-align: center;
+}
+
+.texto-direita {
+    position: relative;
+    top: 10%; /* Ajusta a posição do texto à direita */
+    right: 2%;
+    width: 60%;
+    font-size: 30px; /* Reduz o tamanho do texto */
+    margin-top: 2%;
+    margin-right: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: -7.6%;
+    margin-left: 22%;
+    background-color: rgb(17, 74, 148);
+    color: #ffffff;
+}
+
+/* Estilo do rodapé */
+.rodape {
+    margin-top: 2%; /* Ajusta a margem superior do rodapé */
+}
+
+/* Adição de animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes movePlane {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.aviao img {
+    animation: fadeIn 1.5s ease-in-out, movePlane 2s linear infinite; /* Adiciona a animação à imagem do avião */
+}
+
+.texto-direita {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fundo animado */
+body {
+    background: linear-gradient(45deg, #26609e, #4b81b4);
+    animation: gradientAnimation 5s ease infinite alternate;
+}
+
+/* Melhoria no Menu */
+.menu-item {
+    transition: background-color 0.5s ease, transform 0.3s ease-in-out;
+}
+
+/* ... (restante do seu código) */
