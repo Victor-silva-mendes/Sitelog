@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreamento - Transportadora Aérea</title>
+    <link rel="stylesheet" href="../css/rastreamento.css">
+</head>
+<body class="ffundo">
+    <header>
+        <h1>Rastreamento</h1>
+    </header>
+    
+    <div class="btninicio">
+        <a href="../html/home.html" class="btn">Início</a>
+    </div>
+
+    <section class="video-section">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8BstHYSB1GM?si=kuHDo8D0zA8fGhOm" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+
+
+    <main class="container">
+        <div class="tracking-info">
+            <h2>Rastreie sua encomenda</h2>
+            <p>Insira o código de rastreamento abaixo para acompanhar o status de sua encomenda.</p>
+            <input type="text" id="tracking-code" placeholder="Código de rastreamento ex: BR2343732">
+            <button id="track-button" onclick="rastrear()">Rastrear</button>
+        </div>
+
+        <div class="tracking-results" id="tracking-results" style="display: none;">
+            <h2>Resultados de rastreamento</h2>
+            <p>Seu pacote está a caminho! Aqui estão os detalhes mais recentes:</p>
+            <ul>
+                <li><strong>Data:</strong> 10 de janeiro, 2023</li>
+                <li><strong>Status:</strong> Em trânsito</li>
+                <li><strong>Localização:</strong> Aeroporto Internacional</li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="img1">
+        <img src="../img/rastreamento.jpeg" alt="" srcset="">
+    </div>
+    
+        <div class="img2">
+        <img src="../img/rastreamento2.jpeg" alt="" srcset="">
+    </div>
+
+    <footer>
+        &copy; 2023 Transportadora Aérea. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        function rastrear() {
+            // Obter o valor do código de rastreamento
+            var trackingCode = document.getElementById("tracking-code").value;
+
+            // Verificar se o código de rastreamento foi inserido
+            if (trackingCode.trim() !== "") {
+                // Exibir a seção de resultados de rastreamento
+                document.getElementById("tracking-results").style.display = "block";
+            } else {
+                // Se o código de rastreamento estiver vazio, você pode exibir uma mensagem de erro ou realizar outra ação.
+                alert("Por favor, insira um código de rastreamento válido.");
+            }
+        }
+    </script>
+</body>
+</html>
